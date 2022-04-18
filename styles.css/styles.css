@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.useGrid {
+  width: 1000px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "contenidoUno contenidoUno contenidoUno contenidoUno "
+    "contenidoDos contenidoDos contenidoDos contenidoDos";
+}
+
+.contenidoUno {
+  grid-area: contenidoUno;
+}
+
+.contenidoDos {
+  grid-area: contenidoDos;
+}
+header {
+  background-image: linear-gradient(
+    to right,
+    rgb(7, 131, 197),
+    rgb(9, 85, 126),
+    rgb(2, 54, 82),
+    rgb(2, 45, 68)
+  );
+}
+
+header:hover {
+  background-image: linear-gradient(
+    to left,
+
+    rgb(7, 131, 197),
+    rgb(9, 85, 126),
+    rgb(2, 54, 82),
+    rgb(2, 45, 68)
+  );
+  color: azure;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  margin: 1em;
+  padding: 0.5em;
+  /*font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;*/
+}
+
+nav a:hover {
+  color: rgba(189, 180, 180, 0.899);
+  font-size: x-large;
+}
+
+main h1 {
+  display: flexbox;
+  text-align: center;
+  margin-top: 1em;
+}
+
+main div p {
+  display: flexbox;
+  text-align: center;
+  margin-top: 1em;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .useGrid {
+    width: 400px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "contenidoUno contenidoUno "
+      "contenidoDos contenidoDos ";
+  }
+
+  .contenidoUno {
+    grid-area: contenidoUno;
+  }
+
+  .contenidoDos {
+    grid-area: contenidoDos;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: medium;
+  }
+  p {
+    font-size: small;
+  }
+
+  .useGrid {
+    width: 250px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "contenidoUno contenidoUno "
+      "contenidoDos contenidoDos ";
+  }
+
+  .contenidoUno {
+    grid-area: contenidoUno;
+  }
+
+  .contenidoDos {
+    grid-area: contenidoDos;
+  }
+}
+
+@media screen and (max-width: 00px) {
+}

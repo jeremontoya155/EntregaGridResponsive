@@ -1,0 +1,140 @@
+/*General de la pagina y animacion de perimetro*/
+
+p {
+  margin-bottom: 2em;
+}
+
+.extras {
+  width: 400px;
+  height: 400px;
+  display: inline;
+  margin-bottom: 4em;
+}
+
+.extras a {
+  text-decoration: none;
+  color: rgb(6, 146, 197);
+  text-decoration: none;
+}
+
+.extras a:hover {
+  text-decoration: none;
+  color: rgb(3, 49, 66);
+  font-size: x-large;
+}
+
+.contenedor {
+  border: solid rgb(6, 122, 164);
+  width: 400px;
+  height: 400px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cuadrado {
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  animation-name: perimetro;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  position: relative;
+}
+
+@keyframes perimetro {
+  5% {
+    left: -200px;
+    top: 0px;
+  }
+  30% {
+    left: 200px;
+    top: 0px;
+  }
+
+  65% {
+    top: 400px;
+    left: 200px;
+  }
+  80% {
+    left: -200px;
+    top: 400px;
+  }
+  100% {
+    left: -200px;
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    border: solid rgb(6, 122, 164);
+    width: 200px;
+    height: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes perimetro {
+    5% {
+      left: -100px;
+      top: 0px;
+    }
+    30% {
+      left: 100px;
+      top: 0px;
+    }
+
+    65% {
+      top: 200px;
+      left: 100px;
+    }
+    80% {
+      left: -100px;
+      top: 200px;
+    }
+    100% {
+      left: -100px;
+      top: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor {
+    border: solid rgb(6, 122, 164);
+    width: 100px;
+    height: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes perimetro {
+    5% {
+      left: -50px;
+      top: 0px;
+    }
+    30% {
+      left: 50px;
+      top: 0px;
+    }
+
+    65% {
+      top: 100px;
+      left: 50px;
+    }
+    80% {
+      left: -50px;
+      top: 100px;
+    }
+    100% {
+      left: -50px;
+      top: 0px;
+    }
+  }
+}
