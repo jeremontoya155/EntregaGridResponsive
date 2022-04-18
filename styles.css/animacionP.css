@@ -69,7 +69,7 @@ p {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .contenedor {
     border: solid rgb(6, 122, 164);
     width: 200px;
