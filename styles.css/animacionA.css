@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .contenedorA {
     border: solid rgb(6, 122, 164);
     width: 300px;
